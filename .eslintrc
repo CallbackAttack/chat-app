@@ -4,11 +4,7 @@
     "es6": true,
     "node": true
   },
-  "extends": [
-    "airbnb/base",
-    "prettier",
-    "plugin:react/recommended"
-  ],
+  "extends": ["airbnb/base", "prettier", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaVersion": 6,
     "ecmaFeatures": {
@@ -30,15 +26,12 @@
         }
       }
     ],
-    "jsx-a11y/label-has-associated-control": [
-      2,
-      {
-        "labelComponents": ["CustomInputLabel"],
-        "labelAttributes": ["label"],
-        "controlComponents": ["CustomInput"],
-        "depth": 3
-      }
-    ],
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "labelComponents": ["CustomInputLabel"],
+      "labelAttributes": ["label"],
+      "controlComponents": ["CustomInput"],
+      "depth": 3
+    }],
     "max-len": [
       "warn",
       {
