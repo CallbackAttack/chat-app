@@ -15,11 +15,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint:fix": "eslint ./src --fix",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/app.css -w"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +46,8 @@
   "repository": "https://github.com/CallbackAttack/chat-app",
   "author": "Yan <yan.doschinskiy@gmail.com>",
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^10.2.4",
     "eslint": "^7.21.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
@@ -57,6 +61,9 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^5.1.1",
     "nodemon": "^2.0.7",
-    "prettier": "^2.2.1"
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.0.3"
   }
 }
