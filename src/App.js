@@ -1,11 +1,11 @@
 import React from "react"
 import "./styles/app.css"
-import Header from './components/header'
+import AuthForm from './components/auth_form'
 
 function App() {
   return (
     <div>
-      <Header />
+      <AuthForm />
     </div>
   )
 

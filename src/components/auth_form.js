@@ -1,6 +1,6 @@
 import React from "react"
 
-const Header = () => {
+const AuthForm = () => {
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       <div className="grid place-items-center mx-2 my-20 sm:my-auto">
@@ -32,11 +32,7 @@ const Header = () => {
                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
               required
             />
-            <label
-              id="password_label"
-              htmlFor="password"
-              className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
-            >
+            <label id="password_label" htmlFor="password" className="block mt-2 text-xs font-semibold text-gray-600 uppercase" >
               Password
             </label>
             <input
@@ -79,4 +75,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default AuthForm
